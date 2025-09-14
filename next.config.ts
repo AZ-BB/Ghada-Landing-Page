@@ -2,10 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   outputFileTracingRoot: __dirname,
-  experimental: {
-    outputFileTracingIncludes: {
-      '/': ['./src/**/*'],
-    },
+  outputFileTracingIncludes: {
+    '/': ['./src/**/*'],
   },
   images: {
     formats: ['image/webp', 'image/avif'],
