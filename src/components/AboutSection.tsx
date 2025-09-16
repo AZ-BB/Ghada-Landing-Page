@@ -213,7 +213,7 @@ export function AboutSection() {
         </motion.div>
 
         {/* Experience Timeline */}
-        <motion.div
+        {/* <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -248,7 +248,7 @@ export function AboutSection() {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )

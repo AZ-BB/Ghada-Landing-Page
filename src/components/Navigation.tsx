@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin, Menu, X } from 'lucide-react'
+import { Phone, Mail, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 
@@ -28,36 +28,13 @@ export function Navigation() {
 
   return (
     <>
-      {/* Top Contact Bar */}
-      <div className="bg-dark-gray text-white py-3 px-4 hidden lg:block relative z-50 border-b border-gold">
-        <div className="max-w-7xl mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-8">
-            <div className="flex items-center space-x-2 hover:text-gold transition-colors duration-200">
-              <MapPin className="w-4 h-4 text-gold" />
-              <span>70 Al Itihad St., Rabdan area, Abu Dhabi</span>
-            </div>
-            <div className="flex items-center space-x-2 hover:text-gold transition-colors duration-200">
-              <Phone className="w-4 h-4 text-gold" />
-              <a href="tel:+97125555097" className="hover:text-gold transition-colors duration-200">02 5555 097</a>
-            </div>
-            <div className="flex items-center space-x-2 hover:text-gold transition-colors duration-200">
-              <Mail className="w-4 h-4 text-gold" />
-              <a href="mailto:info@maxhealthcare.ae" className="hover:text-gold transition-colors duration-200">info@maxhealthcare.ae</a>
-            </div>
-          </div>
-          <div className="flex items-center space-x-4 text-xs">
-            <span className="text-gold">🕒 Open: Mon-Thu 9AM-8PM | Fri 2PM-8PM | Sat 9AM-6PM</span>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navigation */}
       <motion.nav
         className={cn(
-          'fixed left-0 right-0 z-40 transition-all duration-300',
+          'fixed top-0 left-0 right-0 z-40 transition-all duration-300',
           isScrolled
-            ? 'top-0 bg-gradient-to-r from-dark-gray via-black to-dark-gray shadow-xl border-b border-gold/10'
-            : 'top-12 lg:top-11 bg-gradient-to-r from-dark-gray via-black to-dark-gray shadow-lg'
+            ? 'bg-gradient-to-r from-dark-gray via-black to-dark-gray shadow-xl border-b border-gold/10'
+            : 'bg-gradient-to-r from-dark-gray via-black to-dark-gray shadow-lg'
         )}
         initial={{ y: -100 }}
         animate={{ y: 0 }}

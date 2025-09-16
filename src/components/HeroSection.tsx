@@ -9,7 +9,7 @@ export function HeroSection() {
     { icon: Star, label: '20+ Years', sublabel: 'Experience' },
     { icon: Award, label: 'International', sublabel: 'Certifications' },
     { icon: Users, label: '5,000+', sublabel: 'Clients' },
-    { icon: Calendar, label: 'Same‑Week', sublabel: 'Appointments' },
+    { icon: Calendar, label: 'Week Before', sublabel: 'Appointments' },
   ]
 
   return (

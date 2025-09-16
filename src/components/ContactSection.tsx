@@ -12,13 +12,13 @@ export function ContactSection() {
       secondary: '+971 543 055 055',
       href: 'tel:+97125555097'
     },
-    {
-      icon: Mail,
-      title: 'Email',
-      primary: 'info@maxhealthcare.ae',
-      secondary: 'appointments@maxhealthcare.ae',
-      href: 'mailto:info@maxhealthcare.ae'
-    },
+    // {
+    //   icon: Mail,
+    //   title: 'Email',
+    //   primary: 'info@maxhealthcare.ae',
+    //   secondary: 'appointments@maxhealthcare.ae',
+    //   href: 'mailto:info@maxhealthcare.ae'
+    // },
     {
       icon: MapPin,
       title: 'Location',
@@ -26,13 +26,6 @@ export function ContactSection() {
       secondary: 'Al Rabdan Area, Abu Dhabi, UAE',
       href: 'https://goo.gl/maps/ACcGFhZsE5gMBhVE9'
     }
-  ]
-
-  const workingHours = [
-    { day: 'Monday - Thursday', hours: '9:00 AM - 8:00 PM' },
-    { day: 'Friday', hours: '2:00 PM - 8:00 PM' },
-    { day: 'Saturday', hours: '9:00 AM - 6:00 PM' },
-    { day: 'Sunday', hours: 'Closed' }
   ]
 
   return (
@@ -79,15 +72,16 @@ export function ContactSection() {
           </motion.p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 items-start lg:items-stretch">
           {/* Contact Information */}
           <motion.div
+            className="h-full"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="bg-white/5 rounded-3xl shadow-gold-lg p-8 border border-white/10 backdrop-blur-sm">
+            <div className="bg-white/5 rounded-3xl shadow-gold-lg p-8 border border-white/10 backdrop-blur-sm h-full">
               <h3 className="text-2xl font-serif font-bold text-white mb-8">
                 Contact Information
               </h3>
@@ -118,7 +112,7 @@ export function ContactSection() {
               </div>
 
               {/* Working Hours */}
-              <motion.div
+              {/* <motion.div
                 className="border-t pt-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -137,18 +131,19 @@ export function ContactSection() {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
 
           {/* Contact Form */}
           <motion.div
+            className="h-full"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="bg-white/5 rounded-3xl shadow-gold-lg p-8 border border-white/10 backdrop-blur-sm">
+            <div className="bg-white/5 rounded-3xl shadow-gold-lg p-8 border border-white/10 backdrop-blur-sm h-full">
               <h3 className="text-2xl font-serif font-bold text-white mb-8">
                 Request Consultation
               </h3>
