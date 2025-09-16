@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export function Navigation() {
+export function NavigationAr() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const pathname = usePathname()
@@ -23,16 +23,15 @@ export function Navigation() {
   }, [])
 
   const navigationItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Credentials', href: '#credentials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'الرئيسية', href: '#home' },
+    { name: 'من نحن', href: '#about' },
+    { name: 'الخدمات', href: '#services' },
+    { name: 'الاعتمادات', href: '#credentials' },
+    { name: 'تواصل', href: '#contact' },
   ]
 
   return (
     <>
-      {/* Main Navigation */}
       <motion.nav
         className={cn(
           'fixed top-0 left-0 right-0 z-40 transition-all duration-300',
@@ -46,23 +45,19 @@ export function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 lg:h-20">
-            {/* Logo */}
             <motion.div
               className="flex items-center"
               whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 10 }}
             >
               <div className="flex items-center space-x-3">
                 <Image
                   src="/logo2.png"
-                  alt="Dr. Ghada Morsy Logo"
+                  alt="شعار د. غادة مرسي"
                   width={200}
                   height={200}
                   className="object-contain"
                 />
-                {/* <div className="text-xl lg:text-2xl font-serif font-bold text-gold">
-                  Dr. Ghada Morsy
-                </div> */}
               </div>
             </motion.div>
 
@@ -112,7 +107,7 @@ export function Navigation() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Book Appointment
+                احجز موعد
               </motion.a>
             </div>
 
@@ -144,7 +139,7 @@ export function Navigation() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="px-4 py-6 space-y-4">
+            <div className="px-4 py-6 space-y-4 text-right">
               {navigationItems.map((item) => (
                 <a
                   key={item.name}
@@ -160,7 +155,7 @@ export function Navigation() {
                   href="tel:+97125555097"
                   className="block bg-gold hover:bg-gold-dark text-white text-center px-6 py-3 rounded-full font-medium transition-colors duration-200 shadow-md"
                 >
-                  Book Appointment
+                  احجز موعد
                 </a>
               </div>
               {/* Language Switcher - Mobile */}
@@ -192,13 +187,13 @@ export function Navigation() {
                 </div>
               </div>
               <div className="pt-4 space-y-2 text-sm text-gray-300">
-                <div className="flex items-center space-x-2">
-                  <Phone className="w-4 h-4 text-gold" />
+                <div className="flex items-center space-x-2 justify-end">
                   <span>02 5555 097</span>
+                  <Phone className="w-4 h-4 text-gold" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Mail className="w-4 h-4 text-gold" />
+                <div className="flex items-center space-x-2 justify-end">
                   <span>info@maxhealthcare.ae</span>
+                  <Mail className="w-4 h-4 text-gold" />
                 </div>
               </div>
             </div>
@@ -208,3 +203,5 @@ export function Navigation() {
     </>
   )
 }
+
+
