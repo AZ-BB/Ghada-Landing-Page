@@ -53,13 +53,6 @@ export function ServicesSectionAr() {
       description: 'إجراءات شاملة لنحت الجسم وتحسين البشرة.',
       treatments: ['إذابة الدهون', 'تجديد اليدين', 'تقشير الجسم'],
       color: 'from-[70%] from-gold to-gold-dark'
-    },
-    {
-      icon: Stethoscope,
-      title: 'علاجات طبية',
-      description: 'إجراءات غير جراحية لحالات جلدية متنوعة.',
-      treatments: ['الكي الكهربائي', 'إزالة الآفات الجلدية', 'استشارات طبية'],
-      color: 'from-[70%] from-gold to-gold-dark'
     }
   ]
 

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Phone, MapPin, Calendar, Send, Star } from 'lucide-react'
+import Image from 'next/image'
 
 export function ContactSectionAr() {
   const contactInfo = [
@@ -76,30 +77,7 @@ export function ContactSectionAr() {
                 معلومات التواصل
               </h3>
 
-              <div className="space-y-6 mb-8">
-                {contactInfo.map((info, index) => (
-                  <motion.a
-                    key={index}
-                    href={info.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-start p-4 rounded-xl hover:bg-white/10 transition-colors duration-300 group justify-between"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    <div className="text-right">
-                      <h4 className="font-semibold text-white mb-1">{info.title}</h4>
-                      <p className="text-gray-200 font-medium">{info.primary}</p>
-                      <p className="text-gray-400 text-sm">{info.secondary}</p>
-                    </div>
-                    <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-gold group-hover:text-white transition-colors duration-300">
-                      <info.icon className="w-6 h-6 text-gold group-hover:text-white" />
-                    </div>
-                  </motion.a>
-                ))}
-              </div>
+              <Image src="/max_care.webp" alt="Contact" width={500} height={500} />
             </div>
           </motion.div>
 
@@ -153,22 +131,6 @@ export function ContactSectionAr() {
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
-                  viewport={{ once: true }}
-                >
-                  <label className="block text-sm font-medium text-gray-300 mb-2 text-right">
-                    البريد الإلكتروني
-                  </label>
-                  <input
-                    type="email"
-                    className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200"
-                    placeholder="your.email@example.com"
-                  />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
                   viewport={{ once: true }}
                 >
@@ -180,44 +142,6 @@ export function ContactSectionAr() {
                     className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200"
                     placeholder="+971 XX XXX XXXX"
                   />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.8 }}
-                  viewport={{ once: true }}
-                >
-                  <label className="block text-sm font-medium text-gray-300 mb-2 text-right">
-                    الاهتمام العلاجي
-                  </label>
-                  <select className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200">
-                    <option>اختر العلاج</option>
-                    <option>إزالة الشعر بالليزر</option>
-                    <option>علاجات الوجه</option>
-                    <option>البوتوكس</option>
-                    <option>الفيلر</option>
-                    <option>علاجات البشرة</option>
-                    <option>علاجات الشعر</option>
-                    <option>علاجات الجسم</option>
-                    <option>استشارة عامة</option>
-                  </select>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.9 }}
-                  viewport={{ once: true }}
-                >
-                  <label className="block text-sm font-medium text-gray-300 mb-2 text-right">
-                    الرسالة
-                  </label>
-                  <textarea
-                    rows={4}
-                    className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200 resize-none"
-                    placeholder="أخبرنا عن أهدافك الجمالية وأي أسئلة لديك..."
-                  ></textarea>
                 </motion.div>
 
                 <motion.button
@@ -266,7 +190,7 @@ export function ContactSectionAr() {
           >
             اختبر التميز في طب التجميل
           </motion.h3>
-          
+
           <motion.p
             className="text-xl mb-8 max-w-3xl mx-auto opacity-90"
             initial={{ opacity: 0, y: 20 }}

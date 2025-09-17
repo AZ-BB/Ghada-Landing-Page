@@ -28,12 +28,12 @@ export function HeroSection() {
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-2 text-sm text-gray-300">
               <Star className="h-4 w-4 text-gold" aria-hidden="true" />
-              Board‑Certified Aesthetics & Dermatology
+              Board‑Certified Aesthetics
             </div>
 
             <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-[1.15] text-white">
               <span className="text-white">Dr. Ghada Morsy</span>
-              <span className="block mt-2 text-2xl sm:text-3xl lg:text-4xl font-normal text-white/80">Aesthetic & Dermatology Specialist</span>
+              <span className="block mt-2 text-2xl sm:text-3xl lg:text-4xl font-normal text-white/80">Aesthetic Specialist</span>
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0">
@@ -98,7 +98,7 @@ export function HeroSection() {
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-sm font-semibold text-white">Dr. Ghada Morsy</p>
-                      <p className="text-xs text-gray-300">Aesthetic & Dermatology Specialist</p>
+                      <p className="text-xs text-gray-300">Aesthetic Specialist</p>
                     </div>
                     <div className="flex items-center gap-1" aria-label="Rated five out of five stars">
                       {[...Array(5)].map((_, i) => (

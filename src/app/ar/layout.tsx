@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "الدكتورة غادة مرسي",
-  description: "طب الجلدية والتجميل",
+  description: "طب التجميل",
 };
 
 export default function ArabicLayout({

@@ -8,7 +8,7 @@ export function AboutSection() {
   const highlights = [
     'MBBS from Al Azhar University, Egypt',
     '2 Master\'s Degrees from Menoufiya University',
-    'Head of Aesthetics & Dermatology Department',
+    'Head of Aesthetics',
     'Licensed in UAE, Saudi Arabia & Egypt',
     'Member of American Academy of Aesthetic Medicine',
     'Expert in cutting-edge aesthetic treatments'
@@ -71,9 +71,9 @@ export function AboutSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Dr. Ghada Morsy is a highly skilled and experienced Aesthetics & Dermatology Specialist 
-              with over 20 years of expertise in cosmetic dermatology. As the Head of the Department 
-              of Aesthetics & Dermatology at Max Care Medical Center in Abu Dhabi, she has established 
+              Dr. Ghada Morsy is a highly skilled and experienced Aesthetics
+              with over 20 years of expertise in cosmetic dermatology. As the Head of the Department
+              of Aesthetics & Dermatology at Max Care Medical Center in Abu Dhabi, she has established
               herself as one of the leading specialists in the region.
             </motion.p>
 
@@ -84,8 +84,8 @@ export function AboutSection() {
               transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              With extensive knowledge in anti-aging treatments, laser procedures, and facial 
-              rejuvenation, Dr. Ghada is dedicated to providing the highest quality of cosmetic 
+              With extensive knowledge in anti-aging treatments, laser procedures, and facial
+              rejuvenation, Dr. Ghada is dedicated to providing the highest quality of cosmetic
               care and ensuring exceptional results for every patient.
             </motion.p>
 
@@ -160,8 +160,8 @@ export function AboutSection() {
                 viewport={{ once: true }}
               >
                 <p className="text-gray-200 italic mb-3">
-                  "I am committed to helping each patient achieve their aesthetic goals while 
-                  maintaining the highest standards of safety and care. Every treatment is a 
+                  "I am committed to helping each patient achieve their aesthetic goals while
+                  maintaining the highest standards of safety and care. Every treatment is a
                   journey towards enhanced confidence and natural beauty."
                 </p>
                 <p className="text-gold font-semibold">- Dr. Ghada Morsy</p>

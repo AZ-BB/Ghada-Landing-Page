@@ -51,21 +51,6 @@ export function FormSectionAr() {
                             </motion.div>
                         </div>
 
-                        <motion.div
-                            // initial={{ opacity: 0, y: 20 }}
-                            // whileInView={{ opacity: 1, y: 0 }}
-                            // transition={{ duration: 0.6, delay: 0.6 }}
-                            // viewport={{ once: true }}
-                        >
-                            <label className="block text-sm font-medium text-gray-300 mb-2 text-right">
-                                البريد الإلكتروني
-                            </label>
-                            <input
-                                type="email"
-                                className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200"
-                                placeholder="your.email@example.com"
-                            />
-                        </motion.div>
 
                         <motion.div
                             // initial={{ opacity: 0, y: 20 }}
@@ -81,44 +66,6 @@ export function FormSectionAr() {
                                 className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200"
                                 placeholder="+971 XX XXX XXXX"
                             />
-                        </motion.div>
-
-                        <motion.div
-                            // initial={{ opacity: 0, y: 20 }}
-                            // whileInView={{ opacity: 1, y: 0 }}
-                            // transition={{ duration: 0.6, delay: 0.8 }}
-                            // viewport={{ once: true }}
-                        >
-                            <label className="block text-sm font-medium text-gray-300 mb-2 text-right">
-                                الاهتمام العلاجي
-                            </label>
-                            <select className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200">
-                                <option>اختر العلاج</option>
-                                <option>إزالة الشعر بالليزر</option>
-                                <option>علاجات الوجه</option>
-                                <option>البوتوكس</option>
-                                <option>الفيلر</option>
-                                <option>علاجات البشرة</option>
-                                <option>علاجات الشعر</option>
-                                <option>علاجات الجسم</option>
-                                <option>استشارة عامة</option>
-                            </select>
-                        </motion.div>
-
-                        <motion.div
-                            // initial={{ opacity: 0, y: 20 }}
-                            // whileInView={{ opacity: 1, y: 0 }}
-                            // transition={{ duration: 0.6, delay: 0.9 }}
-                            // viewport={{ once: true }}
-                        >
-                            <label className="block text-sm font-medium text-gray-300 mb-2 text-right">
-                                الرسالة
-                            </label>
-                            <textarea
-                                rows={4}
-                                className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200 resize-none"
-                                placeholder="أخبرنا عن أهدافك الجمالية وأي أسئلة لديك..."
-                            ></textarea>
                         </motion.div>
 
                         <motion.button
