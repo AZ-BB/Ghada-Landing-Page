@@ -5,12 +5,14 @@ import { AboutSectionAr } from '@/components/ar/AboutSectionAr'
 import { ServicesSectionAr } from '@/components/ar/ServicesSectionAr'
 import { CredentialsSectionAr } from '@/components/ar/CredentialsSectionAr'
 import { ContactSectionAr } from '@/components/ar/ContactSectionAr'
+import { BeforeAfterSectionAr } from '@/components/ar/BeforeAfterSectionAr'
 
 export default function HomeAr() {
   return (
     <main className="min-h-screen bg-background">
       <NavigationAr />
       <HeroSectionAr />
+      <BeforeAfterSectionAr />
       <FormSectionAr />
       <AboutSectionAr />
       <ServicesSectionAr />

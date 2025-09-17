@@ -1,5 +1,6 @@
 import { HeroSection } from '@/components/HeroSection'
 import { AboutSection } from '@/components/AboutSection'
+import { BeforeAfterSection } from '@/components/BeforeAfterSection'
 import { ServicesSection } from '@/components/ServicesSection'
 import { CredentialsSection } from '@/components/CredentialsSection'
 import { ContactSection } from '@/components/ContactSection'
@@ -11,6 +12,7 @@ export default function HomeEn() {
     <main className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
+      <BeforeAfterSection />
       <FormSection />
       <AboutSection />
       <ServicesSection />
