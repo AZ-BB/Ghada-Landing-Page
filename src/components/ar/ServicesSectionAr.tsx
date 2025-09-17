@@ -1,64 +1,97 @@
-'use client'
+"use client"
 
-import { motion } from 'framer-motion'
-import { Sparkles, Zap, Heart, Scissors, Droplet, Sun, Hand, Stethoscope } from 'lucide-react'
+import { motion } from "framer-motion"
+import {
+  Sparkles,
+  Zap,
+  Heart,
+  Scissors,
+  Droplet,
+  Sun,
+  Hand,
+  Stethoscope,
+} from "lucide-react"
 
 export function ServicesSectionAr() {
   const services = [
     {
       icon: Zap,
-      title: 'إزالة الشعر بالليزر',
-      description: 'تقنية ليزر متقدمة لإزالة الشعر بشكل دائم للوجه والجسم.',
-      treatments: ['الوجه', 'مناطق الجسم', 'كل أنواع البشرة'],
-      link: '/services/hair-removal.jpg',
-      color: 'from-[70%] from-gold to-gold-dark'
+      title: "Botox (Dysport)",
+      treatments: [
+        "xeomin/dysport",
+        "بوتوكس كز الاسنان",
+        "بوتوكس تعرق",
+        "بوتوكس تجاعيد الرقبة (تجاعيد بالطول)",
+        "ضحكة لثوية",
+        "بوتوكس تنحيف الوجه",
+      ],
+      link: "/services/hair-removal.jpg",
+      color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Sparkles,
-      title: 'علاجات الوجه',
-      description: 'إجراءات شاملة لتجديد البشرة وتعزيز نضارتها.',
-      treatments: ['التقشير الكيميائي', 'علاجات مكافحة الشيخوخة', 'تفتيح البشرة'],
-      color: 'from-[70%] from-gold to-gold-dark'
-    },
-    {
-      icon: Droplet,
-      title: 'البوتوكس (Dysport)',
-      description: 'تقليل التجاعيد ونحت الملامح بفعالية عالية.',
-      treatments: ['التجاعيد والخطوط الرفيعة', 'أشرطة الرقبة', 'فرط التعرق'],
-      color: 'from-[70%] from-gold to-gold-dark'
-    },
-    {
-      icon: Heart,
-      title: 'الفيلر',
-      description: 'تعزيز ملامح الوجه واستعادة الحجم بمظهر طبيعي.',
-      treatments: ['فيلر الشفاه', 'تعزيز الخدود', 'علاج تحت العين'],
-      color: 'from-[70%] from-gold to-gold-dark'
-    },
-    {
-      icon: Sun,
-      title: 'علاجات البشرة',
-      description: 'إجراءات متقدمة لتجديد البشرة وتعزيز الكولاجين.',
-      treatments: ['العلاج بالبلازما PRP', 'الميزوثيرابي', 'الوخز المجهري مع التردد الراديوي'],
-      color: 'from-[70%] from-gold to-gold-dark'
+      title: "FILLER",
+      treatments: [
+        "JUVEDERM",
+        "FILMED",
+        "aliaxin",
+        "alexa",
+        "full face filler",
+        "jawline filler",
+        "privilege body",
+      ],
+      link: "/services/face-treatment.webp",
+      color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Scissors,
-      title: 'علاجات الشعر',
-      description: 'علاجات متخصصة لتساقط الشعر وتجديد فروة الرأس.',
-      treatments: ['PRP للشعر', 'الميزوثيرابي', 'علاجات فروة الرأس'],
-      color: 'from-[70%] from-gold to-gold-dark'
+      title: "علاجات الشعر",
+      treatments: ["Exosom", "Stem Cells"],
+      color: "from-[70%] from-gold to-gold-dark",
+      link: "/services/hair.jpg",
     },
     {
-      icon: Hand,
-      title: 'علاجات الجسم',
-      description: 'إجراءات شاملة لنحت الجسم وتحسين البشرة.',
-      treatments: ['إذابة الدهون', 'تجديد اليدين', 'تقشير الجسم'],
-      color: 'from-[70%] from-gold to-gold-dark'
-    }
+      icon: Droplet,
+      title: "Under eye treatments",
+      treatments: [
+        "Under eye filler",
+        "Meso تفتيح"
+      ],
+      color: "from-[70%] from-gold to-gold-dark",
+      link: "/services/under-eye.jpg",
+    },
+    {
+      icon: Heart,
+      title: "علاج البشرة (مسام/اثار حبوب)",
+      treatments: [
+        "Exosom + Dermapen",
+        "Peeling (تقشير بارد)",
+        "Acne Stop ابر خاصة"
+      ],
+      color: "from-[70%] from-gold to-gold-dark",
+      link: "/services/face.jpg",
+    },
+    {
+      icon: Sun,
+      title: "ابر النضارة",
+      treatments: [
+        "ابرة الجمال",
+        "Profhilo",
+        "Profhilo double",
+        "Profhilo stractura",
+        "ابرة الكاريزما",
+        "xeladerm الابرة الملكية او الالماسية"
+      ],
+      color: "from-[70%] from-gold to-gold-dark",
+      link: "/services/injection.jpg",
+    },
   ]
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-br from-dark-gray via-black to-dark-gray">
+    <section
+      id="services"
+      className="py-20 bg-gradient-to-br from-dark-gray via-black to-dark-gray"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
@@ -95,7 +128,8 @@ export function ServicesSectionAr() {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            اختبر أحدث ما تقدمه طب التجميل من خلال مجموعة واسعة من العلاجات المصممة لتعزيز جمالك الطبيعي.
+            اختبر أحدث ما تقدمه طب التجميل من خلال مجموعة واسعة من العلاجات
+            المصممة لتعزيز جمالك الطبيعي.
           </motion.p>
         </motion.div>
 
@@ -114,29 +148,30 @@ export function ServicesSectionAr() {
                   <>
                     <div className="absolute inset-0">
                       <div
-                        className="absolute inset-0 bg-center bg-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
+                        className="absolute inset-0 bg-center bg-cover opacity-40 group-hover:opacity-60 transition-opacity duration-300"
                         style={{ backgroundImage: `url(${service.link})` }}
                       />
-                      <div className="absolute inset-0 bg-black/30" />
+                      <div className="absolute inset-0 bg-black/10" />
                     </div>
                   </>
                 )}
                 <div className="relative z-10">
-                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                  >
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-gold transition-colors duration-300 text-right">
+                  <h3 className="text-4xl font-bold text-white mb-3 group-hover:text-gold transition-colors duration-300 text-right">
                     {service.title}
                   </h3>
-                  
-                  <p className="text-gray-300 mb-4 leading-relaxed text-right">
-                    {service.description}
-                  </p>
 
                   <div className="space-y-2 flex flex-col items-start">
                     {service.treatments.map((treatment, treatmentIndex) => (
-                      <div key={treatmentIndex} className="flex items-center text-sm text-gray-400 justify-end">
+                      <div
+                        key={treatmentIndex}
+                        className="flex items-center text-md text-white justify-end"
+                      >
                         <div className="w-1.5 h-1.5 bg-gold rounded-full ml-2" />
                         {treatment}
                       </div>
@@ -178,7 +213,7 @@ export function ServicesSectionAr() {
             >
               جاهز لبدء رحلتك الجمالية؟
             </motion.h3>
-            
+
             <motion.p
               className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
@@ -186,7 +221,8 @@ export function ServicesSectionAr() {
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              احجز استشارة مخصصة مع الدكتورة غادة مرسي لمناقشة أهدافك واكتشاف الخطة الأنسب لك.
+              احجز استشارة مخصصة مع الدكتورة غادة مرسي لمناقشة أهدافك واكتشاف
+              الخطة الأنسب لك.
             </motion.p>
 
             <motion.div
@@ -219,5 +255,3 @@ export function ServicesSectionAr() {
     </section>
   )
 }
-
-

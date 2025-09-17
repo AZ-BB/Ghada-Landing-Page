@@ -16,73 +16,74 @@ export function ServicesSection() {
   const services = [
     {
       icon: Zap,
-      title: "Laser Hair Reduction",
-      description:
-        "Advanced laser technology for permanent hair removal on face and body.",
-      treatments: ["Face", "Body parts", "All skin types"],
-      color: "from-[70%] from-gold to-gold-dark",
+      title: "Botox (Dysport)",
+      treatments: [
+        "xeomin/dysport",
+        "بوتوكس كز الاسنان",
+        "بوتوكس تعرق",
+        "بوتوكس تجاعيد الرقبة (تجاعيد بالطول)",
+        "ضحكة لثوية",
+        "بوتوكس تنحيف الوجه",
+      ],
       link: "/services/hair-removal.jpg",
+      color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Sparkles,
-      title: "Facial Treatments",
-      description:
-        "Comprehensive facial rejuvenation and skin enhancement procedures.",
+      title: "FILLER",
       treatments: [
-        "Chemical Peels",
-        "Anti-aging treatments",
-        "Skin brightening",
+        "JUVEDERM",
+        "FILMED",
+        "aliaxin",
+        "alexa",
+        "full face filler",
+        "jawline filler",
+        "privilege body",
       ],
-      color: "from-[70%] from-gold to-gold-dark",
-    },
-    {
-      icon: Droplet,
-      title: "Botulinum Toxin (Dysport)",
-      description: "Expert wrinkle reduction and facial contouring treatments.",
-      treatments: ["Wrinkles & Fine lines", "Neck bands", "Hyperhidrosis"],
-      color: "from-[70%] from-gold to-gold-dark",
-    },
-    {
-      icon: Heart,
-      title: "Dermal Fillers",
-      description: "Natural-looking facial enhancement and volume restoration.",
-      treatments: ["Lip fillers", "Cheek enhancement", "Under-eye treatment"],
-      color: "from-[70%] from-gold to-gold-dark",
-    },
-    {
-      icon: Sun,
-      title: "Face Treatments",
-      description:
-        "Advanced skin rejuvenation and collagen enhancement procedures.",
-      treatments: ["PRP therapy", "Mesotherapy", "RF Microneedling"],
+      link: "/services/face-treatment.webp",
       color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Scissors,
-      title: "Hair Treatments",
-      description:
-        "Specialized treatments for hair loss and scalp rejuvenation.",
-      treatments: ["PRP for hair", "Mesotherapy", "Scalp treatments"],
+      title: "علاجات الشعر",
+      treatments: ["Exosom", "Stem Cells"],
       color: "from-[70%] from-gold to-gold-dark",
+      link: "/services/hair.jpg",
     },
     {
-      icon: Hand,
-      title: "Body Treatments",
-      description: "Comprehensive body contouring and skin enhancement.",
-      treatments: ["Fat dissolving", "Hand rejuvenation", "Body peels"],
-      color: "from-[70%] from-gold to-gold-dark",
-    },
-    {
-      icon: Stethoscope,
-      title: "Medical Treatments",
-      description:
-        "Non-surgical medical procedures for various skin conditions.",
+      icon: Droplet,
+      title: "Under eye treatments",
       treatments: [
-        "Electrocautery",
-        "Skin lesion removal",
-        "Medical consultations",
+        "Under eye filler",
+        "Meso تفتيح"
       ],
       color: "from-[70%] from-gold to-gold-dark",
+      link: "/services/under-eye.jpg",
+    },
+    {
+      icon: Heart,
+      title: "علاج البشرة (مسام/اثار حبوب)",
+      treatments: [
+        "Exosom + Dermapen",
+        "Peeling (تقشير بارد)",
+        "Acne Stop ابر خاصة"
+      ],
+      color: "from-[70%] from-gold to-gold-dark",
+      link: "/services/face.jpg",
+    },
+    {
+      icon: Sun,
+      title: "ابر النضارة",
+      treatments: [
+        "ابرة الجمال",
+        "Profhilo",
+        "Profhilo double",
+        "Profhilo stractura",
+        "ابرة الكاريزما",
+        "xeladerm الابرة الملكية او الالماسية"
+      ],
+      color: "from-[70%] from-gold to-gold-dark",
+      link: "/services/injection.jpg",
     },
   ]
 
@@ -150,10 +151,10 @@ export function ServicesSection() {
                   <>
                     <div className="absolute inset-0">
                       <div
-                        className="absolute inset-0 bg-center bg-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
+                        className="absolute inset-0 bg-center bg-cover opacity-40 group-hover:opacity-60 transition-opacity duration-300"
                         style={{ backgroundImage: `url(${service.link})` }}
                       />
-                      <div className="absolute inset-0 bg-black/30" />
+                      <div className="absolute inset-0 bg-black/10" />
                     </div>
                   </>
                 )}
@@ -166,20 +167,17 @@ export function ServicesSection() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-gold transition-colors duration-300">
+                  <h3 className="text-4xl font-bold text-white mb-3 group-hover:text-gold transition-colors duration-300">
                     {service.title}
                   </h3>
 
-                  <p className="text-gray-300 mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
 
                   {/* Treatments List */}
                   <div className="space-y-2">
                     {service.treatments.map((treatment, treatmentIndex) => (
                       <div
                         key={treatmentIndex}
-                        className="flex items-center text-sm text-gray-400"
+                        className="flex items-center text-md text-white"
                       >
                         <div className="w-1.5 h-1.5 bg-gold rounded-full mr-2" />
                         {treatment}

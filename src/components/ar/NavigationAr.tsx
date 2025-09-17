@@ -62,13 +62,13 @@ export function NavigationAr() {
             </motion.div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex lg:flex-row items-center">
               {navigationItems.map((item) => (
                 <motion.a
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    'text-sm font-medium transition-colors duration-200 hover:text-gold',
+                    'text-sm font-medium transition-colors duration-200 hover:text-gold mx-4',
                     isScrolled ? 'text-white' : 'text-white'
                   )}
                   whileHover={{ scale: 1.05 }}
