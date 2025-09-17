@@ -10,7 +10,8 @@ export function ServicesSection() {
       title: 'Laser Hair Reduction',
       description: 'Advanced laser technology for permanent hair removal on face and body.',
       treatments: ['Face', 'Body parts', 'All skin types'],
-      color: 'from-blue-400 to-blue-600'
+      color: 'from-blue-400 to-blue-600',
+      link: '/services/hair-removal.jpg'
     },
     {
       icon: Sparkles,
@@ -118,40 +119,53 @@ export function ServicesSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="bg-white/5 rounded-2xl shadow-gold hover:shadow-gold-lg transition-all duration-300 p-6 h-full border border-white/10 group-hover:border-gold/30 group-hover:bg-gradient-to-br group-hover:from-white/10 group-hover:to-gold/10 backdrop-blur-sm">
-                {/* Icon */}
-                <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="w-8 h-8 text-white" />
-                </div>
-
-                {/* Content */}
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-gold transition-colors duration-300">
-                  {service.title}
-                </h3>
-                
-                <p className="text-gray-300 mb-4 leading-relaxed">
-                  {service.description}
-                </p>
-
-                {/* Treatments List */}
-                <div className="space-y-2">
-                  {service.treatments.map((treatment, treatmentIndex) => (
-                    <div key={treatmentIndex} className="flex items-center text-sm text-gray-400">
-                      <div className="w-1.5 h-1.5 bg-gold rounded-full mr-2" />
-                      {treatment}
+              <div className="relative overflow-hidden bg-white/5 rounded-2xl shadow-gold hover:shadow-gold-lg transition-all duration-300 p-6 h-full border border-white/10 group-hover:border-gold/30 group-hover:bg-gradient-to-br group-hover:from-white/10 group-hover:to-gold/10 backdrop-blur-sm">
+                {service.link && (
+                  <>
+                    <div className="absolute inset-0">
+                      <div
+                        className="absolute inset-0 bg-center bg-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
+                        style={{ backgroundImage: `url(${service.link})` }}
+                      />
+                      <div className="absolute inset-0 bg-black/30" />
                     </div>
-                  ))}
-                </div>
+                  </>
+                )}
+                <div className="relative z-10">
+                  {/* Icon */}
+                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <service.icon className="w-8 h-8 text-white" />
+                  </div>
 
-                {/* Hover Effect */}
-                <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <motion.button
-                    className="w-full bg-gold/10 hover:bg-gold hover:text-white text-gold font-medium py-2 px-4 rounded-lg transition-all duration-300"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Learn More
-                  </motion.button>
+                  {/* Content */}
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-gold transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  
+                  <p className="text-gray-300 mb-4 leading-relaxed">
+                    {service.description}
+                  </p>
+
+                  {/* Treatments List */}
+                  <div className="space-y-2">
+                    {service.treatments.map((treatment, treatmentIndex) => (
+                      <div key={treatmentIndex} className="flex items-center text-sm text-gray-400">
+                        <div className="w-1.5 h-1.5 bg-gold rounded-full mr-2" />
+                        {treatment}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Hover Effect */}
+                  <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <motion.button
+                      className="w-full bg-gold/10 hover:bg-gold hover:text-white text-gold font-medium py-2 px-4 rounded-lg transition-all duration-300"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      Learn More
+                    </motion.button>
+                  </div>
                 </div>
               </div>
             </motion.div>
