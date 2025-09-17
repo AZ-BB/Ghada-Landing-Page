@@ -58,7 +58,7 @@ export function Navigation() {
                   alt="Dr. Ghada Morsy Logo"
                   width={200}
                   height={200}
-                  className="object-contain"
+                  className="object-contain h-10 w-auto sm:h-12 lg:h-16"
                 />
                 {/* <div className="text-xl lg:text-2xl font-serif font-bold text-gold">
                   Dr. Ghada Morsy

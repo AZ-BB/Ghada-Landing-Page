@@ -5,10 +5,10 @@ import { Award, GraduationCap, Shield, Globe, Star, Calendar } from 'lucide-reac
 
 export function CredentialsSectionAr() {
   const licenses = [
-    { title: 'هيئة الصحة أبوظبي (HAAD)', location: 'الإمارات العربية المتحدة', specialty: 'أخصائية جلدية' },
-    { title: 'هيئة الصحة بدبي (DHA)', location: 'الإمارات العربية المتحدة', specialty: 'أخصائية جلدية' },
-    { title: 'الهيئة السعودية للتخصصات الصحية', location: 'المملكة العربية السعودية', specialty: 'مسجل جلدية' },
-    { title: 'نقابة الأطباء المصرية', location: 'مصر', specialty: 'أخصائية جلدية' },
+    { title: 'هيئة الصحة أبوظبي (HAAD)', location: 'الإمارات العربية المتحدة', specialty: 'أخصائية تجميل' },
+    { title: 'هيئة الصحة بدبي (DHA)', location: 'الإمارات العربية المتحدة', specialty: 'أخصائية تجميل' },
+    { title: 'الهيئة السعودية للتخصصات الصحية', location: 'المملكة العربية السعودية', specialty: 'مسجل تجميل' },
+    { title: 'نقابة الأطباء المصرية', location: 'مصر', specialty: 'أخصائية تجميل' },
   ]
 
   const certifications = [
@@ -200,7 +200,7 @@ export function CredentialsSectionAr() {
             <Award className="w-12 h-12 text-gold mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-3">المنصب</h3>
             <div className="text-gray-300">رئيسة القسم</div>
-            <div className="text-sm text-gray-400 mt-1">قسم التجميل والأمراض الجلدية</div>
+            <div className="text-sm text-gray-400 mt-1">قسم التجميل</div>
           </div>
         </motion.div>
       </div>

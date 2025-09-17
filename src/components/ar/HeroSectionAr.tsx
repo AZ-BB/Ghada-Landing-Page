@@ -28,12 +28,12 @@ export function HeroSectionAr() {
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-2 text-sm text-gray-300">
               <Star className="h-4 w-4 text-gold" aria-hidden="true" />
-              حاصلة على البورد في التجميل والأمراض الجلدية
+              حاصلة على البورد في التجميل
             </div>
 
             <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-[1.15] text-white">
               <span className="text-white">الدكتورة غادة مرسي</span>
-              <span className="block mt-2 text-2xl sm:text-3xl lg:text-4xl font-normal text-white/80">أخصائية التجميل والأمراض الجلدية</span>
+              <span className="block mt-2 text-2xl sm:text-3xl lg:text-4xl font-normal text-white/80">أخصائية التجميل</span>
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0">
@@ -98,7 +98,7 @@ export function HeroSectionAr() {
                   <div className="flex items-center justify-between">
                     <div className="text-right">
                       <p className="text-sm font-semibold text-white">الدكتورة غادة مرسي</p>
-                      <p className="text-xs text-gray-300">أخصائية التجميل والأمراض الجلدية</p>
+                      <p className="text-xs text-gray-300">أخصائية التجميل</p>
                     </div>
                     <div className="flex items-center gap-1" aria-label="تقييم خمس نجوم من خمسة">
                       {[...Array(5)].map((_, i) => (

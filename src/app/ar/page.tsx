@@ -9,7 +9,7 @@ import { BeforeAfterSectionAr } from '@/components/ar/BeforeAfterSectionAr'
 
 export default function HomeAr() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background overflow-x-hidden">
       <NavigationAr />
       <HeroSectionAr />
       <BeforeAfterSectionAr />

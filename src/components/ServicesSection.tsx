@@ -1,71 +1,96 @@
-'use client'
+"use client"
 
-import { motion } from 'framer-motion'
-import { Sparkles, Zap, Heart, Scissors, Droplet, Sun, Hand, Stethoscope } from 'lucide-react'
+import { motion } from "framer-motion"
+import {
+  Sparkles,
+  Zap,
+  Heart,
+  Scissors,
+  Droplet,
+  Sun,
+  Hand,
+  Stethoscope,
+} from "lucide-react"
 
 export function ServicesSection() {
   const services = [
     {
       icon: Zap,
-      title: 'Laser Hair Reduction',
-      description: 'Advanced laser technology for permanent hair removal on face and body.',
-      treatments: ['Face', 'Body parts', 'All skin types'],
-      color: 'from-blue-400 to-blue-600',
-      link: '/services/hair-removal.jpg'
+      title: "Laser Hair Reduction",
+      description:
+        "Advanced laser technology for permanent hair removal on face and body.",
+      treatments: ["Face", "Body parts", "All skin types"],
+      color: "from-[70%] from-gold to-gold-dark",
+      link: "/services/hair-removal.jpg",
     },
     {
       icon: Sparkles,
-      title: 'Facial Treatments',
-      description: 'Comprehensive facial rejuvenation and skin enhancement procedures.',
-      treatments: ['Chemical Peels', 'Anti-aging treatments', 'Skin brightening'],
-      color: 'from-pink-400 to-pink-600'
+      title: "Facial Treatments",
+      description:
+        "Comprehensive facial rejuvenation and skin enhancement procedures.",
+      treatments: [
+        "Chemical Peels",
+        "Anti-aging treatments",
+        "Skin brightening",
+      ],
+      color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Droplet,
-      title: 'Botulinum Toxin (Dysport)',
-      description: 'Expert wrinkle reduction and facial contouring treatments.',
-      treatments: ['Wrinkles & Fine lines', 'Neck bands', 'Hyperhidrosis'],
-      color: 'from-purple-400 to-purple-600'
+      title: "Botulinum Toxin (Dysport)",
+      description: "Expert wrinkle reduction and facial contouring treatments.",
+      treatments: ["Wrinkles & Fine lines", "Neck bands", "Hyperhidrosis"],
+      color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Heart,
-      title: 'Dermal Fillers',
-      description: 'Natural-looking facial enhancement and volume restoration.',
-      treatments: ['Lip fillers', 'Cheek enhancement', 'Under-eye treatment'],
-      color: 'from-red-400 to-red-600'
+      title: "Dermal Fillers",
+      description: "Natural-looking facial enhancement and volume restoration.",
+      treatments: ["Lip fillers", "Cheek enhancement", "Under-eye treatment"],
+      color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Sun,
-      title: 'Face Treatments',
-      description: 'Advanced skin rejuvenation and collagen enhancement procedures.',
-      treatments: ['PRP therapy', 'Mesotherapy', 'RF Microneedling'],
-      color: 'from-yellow-400 to-yellow-600'
+      title: "Face Treatments",
+      description:
+        "Advanced skin rejuvenation and collagen enhancement procedures.",
+      treatments: ["PRP therapy", "Mesotherapy", "RF Microneedling"],
+      color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Scissors,
-      title: 'Hair Treatments',
-      description: 'Specialized treatments for hair loss and scalp rejuvenation.',
-      treatments: ['PRP for hair', 'Mesotherapy', 'Scalp treatments'],
-      color: 'from-green-400 to-green-600'
+      title: "Hair Treatments",
+      description:
+        "Specialized treatments for hair loss and scalp rejuvenation.",
+      treatments: ["PRP for hair", "Mesotherapy", "Scalp treatments"],
+      color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Hand,
-      title: 'Body Treatments',
-      description: 'Comprehensive body contouring and skin enhancement.',
-      treatments: ['Fat dissolving', 'Hand rejuvenation', 'Body peels'],
-      color: 'from-indigo-400 to-indigo-600'
+      title: "Body Treatments",
+      description: "Comprehensive body contouring and skin enhancement.",
+      treatments: ["Fat dissolving", "Hand rejuvenation", "Body peels"],
+      color: "from-[70%] from-gold to-gold-dark",
     },
     {
       icon: Stethoscope,
-      title: 'Medical Treatments',
-      description: 'Non-surgical medical procedures for various skin conditions.',
-      treatments: ['Electrocautery', 'Skin lesion removal', 'Medical consultations'],
-      color: 'from-teal-400 to-teal-600'
-    }
+      title: "Medical Treatments",
+      description:
+        "Non-surgical medical procedures for various skin conditions.",
+      treatments: [
+        "Electrocautery",
+        "Skin lesion removal",
+        "Medical consultations",
+      ],
+      color: "from-[70%] from-gold to-gold-dark",
+    },
   ]
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-br from-dark-gray via-black to-dark-gray">
+    <section
+      id="services"
+      className="py-20 bg-gradient-to-br from-dark-gray via-black to-dark-gray"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -103,8 +128,9 @@ export function ServicesSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Experience the latest in aesthetic medicine with our comprehensive range of treatments, 
-            each designed to enhance your natural beauty and boost your confidence.
+            Experience the latest in aesthetic medicine with our comprehensive
+            range of treatments, each designed to enhance your natural beauty
+            and boost your confidence.
           </motion.p>
         </motion.div>
 
@@ -133,7 +159,9 @@ export function ServicesSection() {
                 )}
                 <div className="relative z-10">
                   {/* Icon */}
-                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div
+                    className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                  >
                     <service.icon className="w-8 h-8 text-white" />
                   </div>
 
@@ -141,7 +169,7 @@ export function ServicesSection() {
                   <h3 className="text-xl font-bold text-white mb-3 group-hover:text-gold transition-colors duration-300">
                     {service.title}
                   </h3>
-                  
+
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     {service.description}
                   </p>
@@ -149,7 +177,10 @@ export function ServicesSection() {
                   {/* Treatments List */}
                   <div className="space-y-2">
                     {service.treatments.map((treatment, treatmentIndex) => (
-                      <div key={treatmentIndex} className="flex items-center text-sm text-gray-400">
+                      <div
+                        key={treatmentIndex}
+                        className="flex items-center text-sm text-gray-400"
+                      >
                         <div className="w-1.5 h-1.5 bg-gold rounded-full mr-2" />
                         {treatment}
                       </div>
@@ -185,51 +216,52 @@ export function ServicesSection() {
             <div className="absolute inset-0 bg-gradient-to-br from-gold/20 via-transparent to-gold/10" />
           </div>
           <div className="relative z-10 p-8 lg:p-12">
-          <motion.h3
-            className="text-3xl font-serif font-bold text-white mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Ready to Begin Your Transformation?
-          </motion.h3>
-          
-          <motion.p
-            className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            Schedule a personalized consultation with Dr. Ghada Morsy to discuss your aesthetic goals 
-            and discover the perfect treatment plan for you.
-          </motion.p>
+            <motion.h3
+              className="text-3xl font-serif font-bold text-white mb-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              Ready to Begin Your Transformation?
+            </motion.h3>
 
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <motion.a
-              href="tel:+97125555097"
-              className="bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <motion.p
+              className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: true }}
             >
-              Book Consultation
-            </motion.a>
-            <motion.a
-              href="#contact"
-              className="border-2 border-gold text-gold hover:bg-gold hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              Schedule a personalized consultation with Dr. Ghada Morsy to
+              discuss your aesthetic goals and discover the perfect treatment
+              plan for you.
+            </motion.p>
+
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
             >
-              Get in Touch
-            </motion.a>
-          </motion.div>
+              <motion.a
+                href="tel:+97125555097"
+                className="bg-gold hover:bg-gold-dark text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Book Consultation
+              </motion.a>
+              <motion.a
+                href="#contact"
+                className="border-2 border-gold text-gold hover:bg-gold hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Get in Touch
+              </motion.a>
+            </motion.div>
           </div>
         </motion.div>
       </div>

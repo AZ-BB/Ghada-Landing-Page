@@ -8,22 +8,22 @@ export function CredentialsSection() {
     {
       title: 'Health Authority Abu Dhabi (HAAD)',
       location: 'United Arab Emirates',
-      specialty: 'Dermatology Specialist'
+      specialty: 'Aesthetics Specialist'
     },
     {
       title: 'Dubai Health Authority (DHA)',
-      location: 'United Arab Emirates', 
-      specialty: 'Dermatology Specialist'
+      location: 'United Arab Emirates',
+      specialty: 'Aesthetics Specialist'
     },
     {
       title: 'Saudi Council for Health and Specialties',
       location: 'Kingdom of Saudi Arabia',
-      specialty: 'Dermatology Registrar'
+      specialty: 'Aesthetics Registrar'
     },
     {
       title: 'Egyptian Medical Syndicate of Physicians',
       location: 'Egypt',
-      specialty: 'Dermatology Specialist'
+      specialty: 'Aesthetics Specialist'
     }
   ]
 
@@ -94,7 +94,7 @@ export function CredentialsSection() {
       {/* Decorative background elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-gold/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-48 h-48 bg-gold/5 rounded-full blur-3xl" />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
@@ -132,7 +132,7 @@ export function CredentialsSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            Dr. Ghada Morsy's extensive qualifications and certifications reflect her commitment 
+            Dr. Ghada Morsy's extensive qualifications and certifications reflect her commitment
             to maintaining the highest standards in aesthetic medicine and patient care.
           </motion.p>
         </motion.div>
@@ -180,7 +180,7 @@ export function CredentialsSection() {
                 <Shield className="w-8 h-8 text-gold mr-3" />
                 <h3 className="text-2xl font-serif font-bold">Medical Licenses</h3>
               </div>
-              
+
               <div className="space-y-6">
                 {licenses.map((license, index) => (
                   <motion.div
@@ -212,7 +212,7 @@ export function CredentialsSection() {
                 <Award className="w-8 h-8 text-gold mr-3" />
                 <h3 className="text-2xl font-serif font-bold">Certifications & Training</h3>
               </div>
-              
+
               <div className="space-y-4 max-h-96 overflow-y-auto pr-2">
                 {certifications.map((cert, index) => (
                   <motion.div
@@ -269,7 +269,7 @@ export function CredentialsSection() {
             <Award className="w-12 h-12 text-gold mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-3">Position</h3>
             <div className="text-gray-300">Head of Department</div>
-            <div className="text-sm text-gray-400 mt-1">Aesthetics & Dermatology</div>
+            <div className="text-sm text-gray-400 mt-1">Aesthetics</div>
           </div>
         </motion.div>
       </div>

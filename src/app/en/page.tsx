@@ -9,7 +9,7 @@ import { FormSection } from '@/components/FormSection'
 
 export default function HomeEn() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
       <HeroSection />
       <BeforeAfterSection />

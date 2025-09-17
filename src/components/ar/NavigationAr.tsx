@@ -56,7 +56,7 @@ export function NavigationAr() {
                   alt="شعار د. غادة مرسي"
                   width={200}
                   height={200}
-                  className="object-contain"
+                  className="object-contain h-10 w-auto sm:h-12 lg:h-16"
                 />
               </div>
             </motion.div>

@@ -55,22 +55,6 @@ export function FormSection() {
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.6 }}
-                            viewport={{ once: true }}
-                        >
-                            <label className="block text-sm font-medium text-gray-300 mb-2">
-                                Email Address
-                            </label>
-                            <input
-                                type="email"
-                                className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200"
-                                placeholder="your.email@example.com"
-                            />
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.7 }}
                             viewport={{ once: true }}
                         >
@@ -82,44 +66,6 @@ export function FormSection() {
                                 className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200"
                                 placeholder="+971 XX XXX XXXX"
                             />
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.8 }}
-                            viewport={{ once: true }}
-                        >
-                            <label className="block text-sm font-medium text-gray-300 mb-2">
-                                Treatment Interest
-                            </label>
-                            <select className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200">
-                                <option>Select a treatment</option>
-                                <option>Laser Hair Reduction</option>
-                                <option>Facial Treatments</option>
-                                <option>Botulinum Toxin</option>
-                                <option>Dermal Fillers</option>
-                                <option>Face Treatments</option>
-                                <option>Hair Treatments</option>
-                                <option>Body Treatments</option>
-                                <option>General Consultation</option>
-                            </select>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.9 }}
-                            viewport={{ once: true }}
-                        >
-                            <label className="block text-sm font-medium text-gray-300 mb-2">
-                                Message
-                            </label>
-                            <textarea
-                                rows={4}
-                                className="w-full px-4 py-3 border border-white/10 bg-white/5 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-colors duration-200 resize-none"
-                                placeholder="Tell us about your aesthetic goals and any questions you may have..."
-                            ></textarea>
                         </motion.div>
 
                         <motion.button
