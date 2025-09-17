@@ -10,56 +10,56 @@ export function ServicesSectionAr() {
       title: 'إزالة الشعر بالليزر',
       description: 'تقنية ليزر متقدمة لإزالة الشعر بشكل دائم للوجه والجسم.',
       treatments: ['الوجه', 'مناطق الجسم', 'كل أنواع البشرة'],
-      color: 'from-blue-400 to-blue-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Sparkles,
       title: 'علاجات الوجه',
       description: 'إجراءات شاملة لتجديد البشرة وتعزيز نضارتها.',
       treatments: ['التقشير الكيميائي', 'علاجات مكافحة الشيخوخة', 'تفتيح البشرة'],
-      color: 'from-pink-400 to-pink-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Droplet,
       title: 'البوتوكس (Dysport)',
       description: 'تقليل التجاعيد ونحت الملامح بفعالية عالية.',
       treatments: ['التجاعيد والخطوط الرفيعة', 'أشرطة الرقبة', 'فرط التعرق'],
-      color: 'from-purple-400 to-purple-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Heart,
       title: 'الفيلر',
       description: 'تعزيز ملامح الوجه واستعادة الحجم بمظهر طبيعي.',
       treatments: ['فيلر الشفاه', 'تعزيز الخدود', 'علاج تحت العين'],
-      color: 'from-red-400 to-red-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Sun,
       title: 'علاجات البشرة',
       description: 'إجراءات متقدمة لتجديد البشرة وتعزيز الكولاجين.',
       treatments: ['العلاج بالبلازما PRP', 'الميزوثيرابي', 'الوخز المجهري مع التردد الراديوي'],
-      color: 'from-yellow-400 to-yellow-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Scissors,
       title: 'علاجات الشعر',
       description: 'علاجات متخصصة لتساقط الشعر وتجديد فروة الرأس.',
       treatments: ['PRP للشعر', 'الميزوثيرابي', 'علاجات فروة الرأس'],
-      color: 'from-green-400 to-green-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Hand,
       title: 'علاجات الجسم',
       description: 'إجراءات شاملة لنحت الجسم وتحسين البشرة.',
       treatments: ['إذابة الدهون', 'تجديد اليدين', 'تقشير الجسم'],
-      color: 'from-indigo-400 to-indigo-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Stethoscope,
       title: 'علاجات طبية',
       description: 'إجراءات غير جراحية لحالات جلدية متنوعة.',
       treatments: ['الكي الكهربائي', 'إزالة الآفات الجلدية', 'استشارات طبية'],
-      color: 'from-teal-400 to-teal-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     }
   ]
 

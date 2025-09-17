@@ -10,56 +10,56 @@ export function ServicesSection() {
       title: 'Laser Hair Reduction',
       description: 'Advanced laser technology for permanent hair removal on face and body.',
       treatments: ['Face', 'Body parts', 'All skin types'],
-      color: 'from-blue-400 to-blue-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Sparkles,
       title: 'Facial Treatments',
       description: 'Comprehensive facial rejuvenation and skin enhancement procedures.',
       treatments: ['Chemical Peels', 'Anti-aging treatments', 'Skin brightening'],
-      color: 'from-pink-400 to-pink-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Droplet,
       title: 'Botulinum Toxin (Dysport)',
       description: 'Expert wrinkle reduction and facial contouring treatments.',
       treatments: ['Wrinkles & Fine lines', 'Neck bands', 'Hyperhidrosis'],
-      color: 'from-purple-400 to-purple-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Heart,
       title: 'Dermal Fillers',
       description: 'Natural-looking facial enhancement and volume restoration.',
       treatments: ['Lip fillers', 'Cheek enhancement', 'Under-eye treatment'],
-      color: 'from-red-400 to-red-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Sun,
       title: 'Face Treatments',
       description: 'Advanced skin rejuvenation and collagen enhancement procedures.',
       treatments: ['PRP therapy', 'Mesotherapy', 'RF Microneedling'],
-      color: 'from-yellow-400 to-yellow-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Scissors,
       title: 'Hair Treatments',
       description: 'Specialized treatments for hair loss and scalp rejuvenation.',
       treatments: ['PRP for hair', 'Mesotherapy', 'Scalp treatments'],
-      color: 'from-green-400 to-green-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Hand,
       title: 'Body Treatments',
       description: 'Comprehensive body contouring and skin enhancement.',
       treatments: ['Fat dissolving', 'Hand rejuvenation', 'Body peels'],
-      color: 'from-indigo-400 to-indigo-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     },
     {
       icon: Stethoscope,
       title: 'Medical Treatments',
       description: 'Non-surgical medical procedures for various skin conditions.',
       treatments: ['Electrocautery', 'Skin lesion removal', 'Medical consultations'],
-      color: 'from-teal-400 to-teal-600'
+      color: 'from-[70%] from-gold to-gold-dark'
     }
   ]
 
