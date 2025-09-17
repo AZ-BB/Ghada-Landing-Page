@@ -73,7 +73,7 @@ export function AboutSection() {
             >
               Dr. Ghada Morsy is a highly skilled and experienced Aesthetics
               with over 20 years of expertise in cosmetic dermatology. As the Head of the Department
-              of Aesthetics & Dermatology at Max Care Medical Center in Abu Dhabi, she has established
+              of Aesthetics at Max Care Medical Center in Abu Dhabi, she has established
               herself as one of the leading specialists in the region.
             </motion.p>
 
